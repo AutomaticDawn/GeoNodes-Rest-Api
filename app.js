@@ -18,6 +18,9 @@ mongoose.connect(
 		//useMongoClient: true
 	}
 );
+
+//mongoose.connect('mongodb://${Vlada}:${vladimirkrstic01}@${uri}/${db}?authSource=admin')
+
 mongoose.Promise = global.Promise;
 
 app.use(morgan('dev'));
