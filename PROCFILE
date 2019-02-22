@@ -1,1 +1,1 @@
-web: $HOME && npm start
+web: $HOME && server.js
