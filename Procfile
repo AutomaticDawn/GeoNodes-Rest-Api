@@ -1,1 +1,1 @@
-web: $HOME && server.js
+server.js
