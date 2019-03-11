@@ -11,9 +11,9 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 
 mongoose.connect(
- 'mongodb://Vlada:'
-  + process.env.MONGO_ATLAS_PW
-   + '@geonodes-shard-00-00-8donh.mongodb.net:27017,geonodes-shard-00-01-8donh.mongodb.net:27017,geonodes-shard-00-02-8donh.mongodb.net:27017/test?ssl=true&replicaSet=GeoNodes-shard-0&authSource=admin&retryWrites=true', 
+ 'mongodb://admin:'
+  + '1234'
+   + '@geonodes-shard-00-00-8donh.mongodb.net:27017,geonodes-shard-00-01-8donh.mongodb.net:27017,geonodes-shard-00-02-8donh.mongodb.net:27017/test?ssl=true&replicaSet=GeoNodes-shard-0&authMechanism=SCRAM-SHA-1&authSource=admin&retryWrites=true', 
 	{
 		//useMongoClient: true
 	}
